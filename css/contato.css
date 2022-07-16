@@ -1,0 +1,130 @@
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.75rem;
+}
+.contato-col1 {
+  grid-column: 1;
+}
+.contato-col2 {
+  grid-column: 2;
+  padding-top: 3.75rem;
+}
+.contato-col1 .titulo {
+  text-align: center;
+}
+.contato-col2 {
+  padding-bottom: 2.5rem;
+}
+.logo-footer img {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.contatos {
+  list-style: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 2.2rem;
+  color: #ededed;
+  position: relative;
+}
+
+.contatos::before {
+  content: "";
+  width: 14.375rem;
+  height: 14.375rem;
+  transform: rotate(100deg);
+  display: block;
+  background: url("../img/blob_intro.svg") no-repeat;
+  position: absolute;
+  right: 8.75rem;
+  top: -0rem;
+  z-index: -2;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding-top: 2.5rem;
+}
+
+.direitos {
+  padding: 1.25rem 0;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #676464;
+}
+
+@media (max-width: 62.5rem) {
+  .contato {
+    gap: 0;
+  }
+  .logo-footer {
+    max-width: 18.75rem;
+    margin: 0 auto;
+    padding-bottom: 2.5rem;
+  }
+  .contatos::before {
+    content: "";
+    width: 14.375rem;
+    height: 14.375rem;
+    transform: rotate(100deg);
+    display: block;
+    background: url("../img/blob_intro.svg") no-repeat;
+    position: absolute;
+    right: 7.5rem;
+    top: -1rem;
+    z-index: -2;
+  }
+}
+@media (max-width: 56.25rem) {
+  .contato {
+    grid-template-columns: 1fr;
+  }
+  .contato-col2 {
+    grid-column: initial;
+  }
+  .contatos-img {
+    width: 25rem;
+    margin: 0 auto;
+  }
+  .contatos::before {
+    display: none;
+  }
+}
+@media (max-width: 33rem) {
+  .contatos-img {
+    width: 18.75rem;
+    margin: 0 auto;
+  }
+  .contato-col1 .titulo {
+    text-transform: capitalize;
+  }
+  .logo-footer {
+    padding-bottom: 1.25rem;
+  }
+}
+@media (max-width: 25rem) {
+  .contatos li {
+    font-size: 1.2rem;
+  }
+  .contato-col2 {
+    padding-top: 0;
+  }
+  .contatos-img {
+    width: 16rem;
+    margin: 0 auto;
+  }
+  .logo-footer {
+    width: 12.5rem;
+    padding-top: 4rem;
+    margin: 0 auto;
+  }
+  .social {
+    padding-top: 3.75rem;
+  }
+}

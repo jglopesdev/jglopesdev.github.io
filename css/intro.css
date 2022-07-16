@@ -1,0 +1,134 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 4.4rem;
+  padding: 5rem;
+}
+.img-perfil {
+  max-width: 15rem;
+}
+
+.intro-descricao {
+  color: #dddddd;
+  font-weight: 200;
+  font-size: 3rem;
+  line-height: 3.62rem;
+  text-align: left;
+  position: relative;
+  word-wrap: no;
+}
+.intro-descricao p {
+  max-width: 44rem;
+}
+
+.intro-descricao::before {
+  content: "";
+  width: 35rem;
+  height: 35rem;
+  transform: rotate(100deg);
+  display: block;
+  background: url("../img/blob_intro1.svg") no-repeat;
+  position: absolute;
+  left: 3rem;
+  top: -8rem;
+  z-index: -2;
+}
+
+@media (max-width: 62.5rem) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0;
+    height: auto;
+  }
+  .intro-descricao {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .intro-descricao p {
+    max-width: 37.5rem;
+  }
+  .intro-descricao::before {
+    content: "";
+    width: 31.25rem;
+    height: 31.25rem;
+    transform: rotate(100deg);
+    display: block;
+    background: url("../img/blob_intro1.svg") no-repeat;
+    position: absolute;
+    left: 4.37rem;
+    top: -5rem;
+    z-index: -2;
+  }
+}
+
+@media (max-width: 47.5rem) {
+  .intro-descricao p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    max-width: 28.75rem;
+  }
+  .intro-descricao::before {
+    content: "";
+    width: 25rem;
+    height: 25rem;
+    transform: rotate(100deg);
+    display: block;
+    background: url("../img/blob_intro1.svg") no-repeat;
+    position: absolute;
+    left: 1.875rem;
+    top: -5rem;
+    z-index: -2;
+  }
+}
+
+@media (max-width: 41.25rem) {
+  .intro-descricao p {
+    font-size: 1.375rem;
+    line-height: 2rem;
+    padding-top: 1.25rem;
+  }
+  .img-perfil {
+    padding: 1.25rem 0;
+  }
+  .intro {
+    gap: 0;
+  }
+  .intro-descricao::before {
+    content: "";
+    width: 16.25rem;
+    height: 16.25rem;
+    transform: rotate(100deg);
+    display: block;
+    background: url("../img/blob_intro1.svg") no-repeat;
+    position: absolute;
+    left: 5.62rem;
+    top: -3.75rem;
+    z-index: -2;
+  }
+}
+
+@media (max-width: 32.5rem) {
+  .intro-descricao p {
+    max-width: 20rem;
+  }
+  .intro-descricao::before {
+    content: "";
+    width: 16.25rem;
+    height: 16.25rem;
+    transform: rotate(100deg);
+    display: block;
+    background: url("../img/blob_intro1.svg") no-repeat;
+    position: absolute;
+    left: 2.18rem;
+    top: -1.56rem;
+    z-index: -2;
+  }
+  .img-perfil {
+    width: 10rem;
+  }
+}
