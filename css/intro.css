@@ -27,15 +27,20 @@
 
 .intro-descricao::before {
   content: "";
-  width: 35rem;
+  width: 22rem;
+  height: 22rem;
+  top: 2rem;
+  left: 9rem;
+  /* width: 35rem;
   height: 35rem;
   transform: rotate(100deg);
-  display: block;
-  background: url("../img/blob_intro1.svg") no-repeat;
-  position: absolute;
   left: 3rem;
   top: -8rem;
+   */
   z-index: -2;
+  display: block;
+  background: url("../img/detalhe_bg.svg") no-repeat;
+  position: absolute;
 }
 
 @media (max-width: 62.5rem) {
@@ -53,16 +58,8 @@
     max-width: 37.5rem;
   }
   .intro-descricao::before {
-    content: "";
-    width: 31.25rem;
-    height: 31.25rem;
-    transform: rotate(100deg);
-    display: block;
-    background: url("../img/blob_intro1.svg") no-repeat;
-    position: absolute;
-    left: 4.37rem;
-    top: -5rem;
-    z-index: -2;
+    left: 10rem;
+    top: 0rem;
   }
 }
 
@@ -73,16 +70,8 @@
     max-width: 28.75rem;
   }
   .intro-descricao::before {
-    content: "";
-    width: 25rem;
-    height: 25rem;
-    transform: rotate(100deg);
-    display: block;
-    background: url("../img/blob_intro1.svg") no-repeat;
-    position: absolute;
-    left: 1.875rem;
-    top: -5rem;
-    z-index: -2;
+    left: 5rem;
+    top: 0rem;
   }
 }
 
